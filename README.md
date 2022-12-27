@@ -1,0 +1,1 @@
+# npm-component-script
