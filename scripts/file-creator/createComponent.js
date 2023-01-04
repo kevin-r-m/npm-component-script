@@ -49,13 +49,9 @@ function handleComponentCreation() {
   const text = data.join("\n");
 
   // writes new file
-  writeFileSync(
-    __dirname + "/templates/_Component_Module_PropTypes.jsx",
-    text,
-    function (err) {
-      if (err) return err;
-    }
-  );
+  writeFileSync(__dirname + "/templates/_component.jsx", text, function (err) {
+    if (err) return err;
+  });
 
   /* END NEW FILE WRITING */
 
