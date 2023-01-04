@@ -27,8 +27,8 @@ function handleComponentCreation() {
     `components/test/test.jsx`
   );
 
-  // grabs file data and turns into an array of strings, split on new lines (/n)
-  const data = readFileSync(newComponentFile).toString().split("\n");
+  // grabs file data and turns into an array of strings, split on new lines (/n) -- test/test.jsx should be updated to the dynamic fields (fileNameInput)
+  const data = readFileSync("components/test/test.jsx").toString().split("\n");
 
   // used on template file to replace in data array with imports -- needs better syntax
   const importString = '("import placeholder");';
