@@ -36,7 +36,7 @@ function handleComponentCreation() {
   // finds index of import string
   const importIndex = data.findIndex((element) => element === importString);
 
-  // import array
+  // import array -- this needs to be built, likely can build an object and with an import array key
   const imports = [
     `import styles from "./${fileNameInput}.scss";\n`,
     `import PropTypes from "prop-types";`,
